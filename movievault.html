@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Movie Vault</h2>
+    <p>a personal movie database</p>
+    <form action="">
+        <div class="input-group">
+           <label for="movie-title">Movie Title:</label>
+            <input type="text" name="movie-title" id="movie-title" placeholder="Enter movie title">
+        </div>
+        <div class="input-group">
+            <label for="year">Year</label>
+            <input type="text" name="year" id="year" placeholder="Year (e.g 2024)">
+        </div>
+        <div class="input-group">
+            <label for="director">Director:</label>
+            <input type="text" name="director" id="director" placeholder="Director's Name">
+        </div>
+        <div class="input-group">
+            <label for="rating">Rating:</label>
+            <input type="number" name="rating" id="rating" placeholder="Rating (e.g. 0-10)" min="0" max="10" step="0.1">
+        </div>
+        <div class="input-group">
+            <label for="genres">Genres (comma-separated):</label>
+            <input type="text" name="genres" id="genres" placeholder="Action, Comedy, Drama">
+        </div>
+        <button id="add-movies">Add Movies To Database</button>
+    </form>
+
+    <div class="search">
+        <input type="text" name="search-movies" id="search-movies" placeholder="Search movies...">
+        <select name="All Genres" id="all-genres">
+            <option value="">All Genres</option>
+        </select>
+    </div>
+
+    <div id="outputdiv">
+        <div class="movie-card1">
+                <div class="movie-img">
+
+                </div>
+                
+                <div class="movie-details">
+                    <h3 class="movie-name">Oppenheimer</h3>
+                    <div class="year-rating">
+                        <p class="year">2022</p>
+                        <div class="rating">7.8</div>
+                    </div>
+                    <h3 class="director"></h3>
+                    <div class="genres">
+                        <div class="genre">biography</div>
+                        <div class="genre">history</div>
+                        <div class="genre">drama</div>
+                    </div>
+                </div>
+        </div>    
+        <div class="movie-card2">
+                <div class="movie-img">
+
+                </div>
+
+                <div class="movie-details">
+                    <h3 class="movie-name">Batman</h3>
+                    <div class="year-rating">
+                        <p class="year">2022</p>
+                        <div class="rating">7.8</div>
+                    </div>
+                    <h3 class="director"><strong>Director:</strong>Matt Reeves</h3>
+                    <div class="genres">
+                        <div class="genre">Crime</div>
+                        <div class="genre">Drama</div>
+                        <div class="genre">Action</div>
+                    </div>
+                </div>
+        </div>    
+        <div class="movie-card3">
+                <div class="movie-img">
+
+                </div>
+
+                <div class="movie-details">
+                    <h3 class="movie-name">Dune</h3>
+                    <div class="year-rating">
+                        <p class="year">2022</p>
+                        <div class="rating">8.8</div>
+                    </div>
+                    <h3 class="director"><strong>Director:</strong> Denis Villeneuve</h3>
+                    <div class="genres">
+                        <div class="genre">Sci-Fi</div>
+                        <div class="genre">Adventure</div>
+                        <div class="genre">Drama</div>
+                    </div>
+                </div>
+        </div>    
+    </div>
+   <script src="index.js"></script>
+</body>
+</html>
